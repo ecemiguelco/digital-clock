@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: "Merriweather", serif;
+  /* border: 1px solid white; */
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.digital-clock-container {
+  display: grid;
+  height: 800px;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: repeat(2, 220px) repeat(2, 100px);
+  grid-template-columns: 100px 100px repeat(2, 80px);
+}
+
+.clock-display,
+.mil-time-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #f9ed00, #b1f6a8); */
+}
+
+.hour-container,
+.min-container {
+  justify-content: end;
+  grid-column: span 3;
+  font-size: 9rem;
+}
+
+.sec-container,
+.session-container {
+  grid-column: span 1;
+  font-size: 2.5rem;
+}
+
+.date-container,
+.month-container,
+.year-container {
+  font-size: 3rem;
+}
+
+.utc-container {
+  font-size: 2.5rem;
+  grid-column: span 4;
+}
+
+.date-container {
+  grid-column: span 1;
+  justify-content: end;
+}
+
+.month-container {
+  grid-column: span 1;
+}
+
+.year-container {
+  grid-column: span 2;
+}
+
+.buttons-container {
+  border: 1px solid aquamarine;
+  border-radius: 1.5rem;
+}
+
+.color-buttons,
+.fonts-buttons,
+.mil-time-button {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-direction: column;
+}
+button {
+  height: 2rem;
+  background-color: white;
+  color: black;
+}
+
+button:hover {
+  background-color: rgb(249, 239, 181);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+button:active {
+  background-color: gold;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.mil-time-toggle-off {
+  background-color: yellow;
+}
+
+.mil-time-toggle-off,
+.mil-time-toggle-on {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.butones {
+  border-radius: 20px;
+  height: 100%;
+  width: 300px;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.transparent-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.transparent-gradient-1 {
+  background-image: linear-gradient(45deg, #fff, #67e87c, #ffffff);
+}
+.transparent-gradient-2 {
+  background-image: linear-gradient(45deg, #fff, #ff3d3d, #ffffff);
+}
+.transparent-gradient-3 {
+  background-image: linear-gradient(45deg, #fff, #8242e2, #ffffff);
+}
