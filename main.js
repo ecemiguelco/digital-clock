@@ -45,7 +45,7 @@ function timeCurrent() {
       hourDisplay.innerText = hh;
     }
   } else {
-    if (hh < 12) {
+    if (hh <= 12) {
       if (hh < 10) {
         hourDisplay.innerText = "0" + hh;
       } else {
