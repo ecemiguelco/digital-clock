@@ -117,9 +117,9 @@ function timeCurrent() {
     utcDiffMinsStr = utcDiffMins.toString();
   }
   if (Math.sign(utcDiff) === -1) {
-    utcDisplay.innerText = `UTC -${utcDiffStr}:${utcDiffMinsStr}`;
-  } else {
     utcDisplay.innerText = `UTC +${utcDiffStr}:${utcDiffMinsStr}`;
+  } else {
+    utcDisplay.innerText = `UTC -${utcDiffStr}:${utcDiffMinsStr}`;
   }
 
   const toggleFont1 = () => {
